@@ -112,41 +112,8 @@ class DefaultApi(object):
         if ('method' not in params or
                 params['method'] is None):
             raise ValueError("Missing the required parameter `method` when calling `transactions_post`")  # noqa: E501
-        # verify the required parameter 'amount' is set
-        if ('amount' not in params or
-                params['amount'] is None):
-            raise ValueError("Missing the required parameter `amount` when calling `transactions_post`")  # noqa: E501
-
-        if 'method' in params and params['method'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `method` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'amount' in params and params['amount'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `amount` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'mobile' in params and params['mobile'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `mobile` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'holdername' in params and params['holdername'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `holdername` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'cardnumber' in params and params['cardnumber'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `cardnumber` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'cvv' in params and params['cvv'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `cvv` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'exp' in params and params['exp'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `exp` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'currency' in params and params['currency'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `currency` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'account' in params and params['account'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `account` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'reference' in params and params['reference'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `reference` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'genericmsg' in params and params['genericmsg'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `genericmsg` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'token' in params and params['token'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `token` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'bouquet' in params and params['bouquet'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `bouquet` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'payoption' in params and params['payoption'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `payoption` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
-        if 'meternumber' in params and params['meternumber'] < 1:  # noqa: E501
-            raise ValueError("Invalid value for parameter `meternumber` when calling `transactions_post`, must be a value greater than or equal to `1`")  # noqa: E501
+        
+        
         collection_formats = {}
 
         path_params = {}
